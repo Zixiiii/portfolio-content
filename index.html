@@ -7,13 +7,33 @@
     <link rel="icon" href="images/favicon.jpg">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
-    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYEPPT3JKG"></script>
+    <script src="https://kit.fontawesome.com/26375291fb.js" crossorigin="anonymous"></script>    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JYEPPT3JKG');
+    </script>
 </head>
 
-<body>
+<body class="container">
     <!-- <div class="skip"><a href="#main"> Skip to Main Content</a></div> -->
-
-	<nav>
+    <header class="header">
+		<!-- <h1>Welcome to my home page!</h1> -->
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1 style="font-size:50px">I am Zixi Zhou</h1>
+              <br>
+              <h3>Welcome to my home page!</h3>
+            </div>
+          </div>
+    </header>
+    <nav>
 		<ul>
 			<li><a class="current" href="index.html">Home</a></li>
 			<li><a href="experience.html">Experience</a></li>
@@ -21,12 +41,8 @@
             <li><a href="gallery.html">Gallery</a></li>
 		</ul>
 	</nav>
-    
-    <header>
-		<h1>Zixi Zhou</h1>
-    </header>
 
-    <main id="main">
+    <main class="main">
         
         <h2>Introduction</h2>
         <p>
@@ -48,10 +64,17 @@
         <figure>
             <img src="images/Shanghai_Jiaotong_University.jpg" alt="Photo of the gate of the Shanghai Jiaotong University" width="500">
             <!-- <figcaption>Fast development of Shenzhen</figcaption> -->
-        </figure>    
+        </figure>  
+
     </main>
 
-	<footer>
+    <aside class="aside">
+        <p>Introduction of Shanghai Jiao Tong University</p> 
+    </aside>
+
+	<footer class="footer">
+        <i class="fa-regular fa-address-book"> Contact Info </i>
+
 	</footer>
 </body>
 

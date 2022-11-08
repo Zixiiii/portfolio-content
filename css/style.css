@@ -7,16 +7,28 @@
     color: black;
 }
 
+html{
+    background-color: #f7ede2;
+    font-family: 'Poppins', sans-serif;
+}
+
 nav ul{
-    display: flex;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    justify-items: center;
+    
 }
 
 nav a{
-    color:royalblue;
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 nav a:focus{
-    color:midnightblue;
+    color: darkseagreen;
 }
 
 li a{
@@ -24,8 +36,8 @@ li a{
 }
 
 a.current{
-    color: darkolivegreen;
-    font-weight: bold;
+    color: #3d5a80;
+    text-decoration: underline;
 }
 
 
@@ -33,24 +45,95 @@ img {
 	width: 300px;
 	padding: 10px;
 	margin: 5px;
-	border: 2px solid royalblue;
+	border: 2px solid #8e9aaf;
 }
 
 img:hover {
 	width: 300px;
 	padding: 10px;
 	margin: 5px;
-	border: 4px dashed darkolivegreen;
+	border: 4px dashed darkseagreen;
 }
 
-h1{
-    font-weight: bold;
-    font-size: large;
-}
+/* The animation code */
+@keyframes example {
+    from {top: -20px;}
+  to {top: 0px;}
+  }
+
+
+.hero-image {
+    background-image: url("../images/h1_background.jpg");
+    background-color: #cccccc;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+
 h2{
     font-weight: bold;
-    text-decoration-line: underline;
+    font-size:25px;
 }
+
+
 h3{
     font-weight: bold;
 }
+
+/* .grid {
+    border: 2px blue solid;
+    width: 400px;
+    height: 500px;
+    display: inline-grid;
+} */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+
+aside{
+    height: 50px;
+    background-color: #d3d3d3;
+}
+
+footer{
+    height: 80px;
+    background-color: #8e9aaf;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media (prefers-reduced-motion) {
+    .hero-image{
+        animation: none;
+    }
+}
+
+
