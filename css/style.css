@@ -10,7 +10,6 @@
 html{
     background-color: #f7ede2;
     font-family: 'Poppins', sans-serif;
-    
 }
 
 p{
@@ -23,7 +22,6 @@ nav ul{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-around;
     justify-items: center;
-    
 }
 
 nav a{
@@ -132,6 +130,7 @@ footer{
 .gallery{
     display: flex;
     flex-wrap: wrap;
+
 }
 
 
