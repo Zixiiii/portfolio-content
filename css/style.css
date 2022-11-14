@@ -66,8 +66,9 @@ img:hover {
 
 
 .Welcome_image {
+    display: grid;
+    grid-template-columns: 1fr;
     background-image: url("../images/h1_background.jpg");
-    background-color: #000000;
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,11 +80,16 @@ img:hover {
   
 .Welcome_text {
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* align-content: center; */
+    padding-top: 80px;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     color: white;
+    background-color: rgba(00, 00, 00, 0.2);;
+    /* height: 300px; */
+    /* width: auto; */
 }
 
 h1{
