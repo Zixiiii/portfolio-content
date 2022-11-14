@@ -97,13 +97,13 @@ h2{
 }
 
 #Name{
+    font-weight: bold;
     font-size:50px;
-    font-weight: normal;
 }
 
 #Welcome{
+    font-weight: bold;
     font-size:25px;
-    font-weight: normal;
 }
 
 /* .grid {
