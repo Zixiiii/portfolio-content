@@ -107,13 +107,13 @@ img {
 }
 
 #Welcome{
-    color: white;
     font-weight: normal;
     font-size:25px;
+    color: white;
 }
 
 h1{
-    color:  #274C77;;
+    color: white;
     font-weight: 500;
     font-size:50px;
     padding: 10px 0 10px 0;
@@ -137,8 +137,8 @@ h3{
 .Welcome_text {
     text-align: center;
     padding-top: 90px;
-    /* background-color: rgba(00, 00, 00, 0.9); */
-    background-color: #555b6e;
+    color: white;
+    background-color: rgba(00, 00, 00, 0.7);
     animation-name: example;
     animation-duration: 4s;
 }
@@ -146,8 +146,8 @@ h3{
 .Welcome_text_not_home {
     text-align: center;
     padding-top: 90px;
-    /* background-color: rgba(00, 00, 00, 0.8); */
-    background-color: #555b6e;
+    color: white;
+    background-color: rgba(00, 00, 00, 0.7);
 }
 
 
@@ -294,8 +294,11 @@ form{
     }
     main{
         display: grid;
-        grid-template-columns: auto auto;
-        gap: 40px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    img{
+        width: 200px;
     }
     .part1{
         grid-area: 1 / 1 / span 2 / span 1;
@@ -403,7 +406,7 @@ form{
     }
     .p_and_img{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
