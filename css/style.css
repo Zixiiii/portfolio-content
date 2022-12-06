@@ -23,6 +23,7 @@ p{
     text-align: justify;
 }
 
+
 nav ul{
     padding: 10px;
     display: grid;
@@ -30,7 +31,9 @@ nav ul{
     justify-content: space-around;
     justify-items: center;
     gap: 15px;
-    
+    background-color: #274C77;
+    height: 40px;
+    align-content: center;
 }
 
 nav a{
@@ -134,7 +137,7 @@ h3{
     text-align: center;
     padding-top: 90px;
     color: white;
-    background-color: rgba(00, 00, 00, 0.6);
+    background-color: rgba(00, 00, 00, 0.7);
     animation-name: example;
     animation-duration: 4s;
 }
@@ -143,7 +146,7 @@ h3{
     text-align: center;
     padding-top: 90px;
     color: white;
-    background-color: rgba(00, 00, 00, 0.6);
+    background-color: rgba(00, 00, 00, 0.7);
 }
 
 
@@ -204,13 +207,7 @@ figcaption{
 }
 
 
-ul{
-    background-color: #274C77;
-    height: 40px;
-    align-content: center;
-    display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr;
-}
+
 
 
 
@@ -255,7 +252,7 @@ form{
 
 #learn_more{
     font-weight: bold;
-    color: #994636;
+    color: #9e2a2b;
     /* margin: 10px 5px 5px 0; */
 }
 
@@ -373,7 +370,7 @@ form{
         justify-content: space-around;
         justify-items: center;
     }
-    
+
     .gallery_section{
         display: flex;
         flex-direction: column;
