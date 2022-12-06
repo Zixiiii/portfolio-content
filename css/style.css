@@ -21,6 +21,7 @@ html{
 p{
     line-height: 25px;
     text-align: justify;
+    margin-bottom: 10px;
 }
 
 
@@ -106,13 +107,13 @@ img {
 }
 
 #Welcome{
+    color: white;
     font-weight: normal;
     font-size:25px;
-    color: white;
 }
 
 h1{
-    color: white;
+    color:  #274C77;;
     font-weight: 500;
     font-size:50px;
     padding: 10px 0 10px 0;
@@ -136,8 +137,8 @@ h3{
 .Welcome_text {
     text-align: center;
     padding-top: 90px;
-    color: white;
-    background-color: rgba(00, 00, 00, 0.7);
+    /* background-color: rgba(00, 00, 00, 0.9); */
+    background-color: #555b6e;
     animation-name: example;
     animation-duration: 4s;
 }
@@ -145,8 +146,8 @@ h3{
 .Welcome_text_not_home {
     text-align: center;
     padding-top: 90px;
-    color: white;
-    background-color: rgba(00, 00, 00, 0.7);
+    /* background-color: rgba(00, 00, 00, 0.8); */
+    background-color: #555b6e;
 }
 
 
@@ -217,7 +218,7 @@ figcaption{
     letter-spacing:2px;
 }
 
-input[type=name],input[type=email] {
+input[type=text],input[type=email] {
     border: none;
     border-radius: 2px;
     padding: 3px;
@@ -273,11 +274,8 @@ form{
 @media all and (min-width: 700px) and (max-width:900px){
 
     nav ul{
-        padding: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-content: space-around;
-        justify-items: center;
     }
 
     .gallery_figure{
@@ -289,7 +287,6 @@ form{
     form{
         display: flex;
         flex-direction: row;
-        gap: 20px;
         align-items: center;
     }
     input[type=submit] {
@@ -309,8 +306,6 @@ form{
     aside{
         margin: 20px 0 20px 0;
         /* height: 50px; */
-        border-radius: 4px;
-        background-color: #d3d3d3;
         grid-area: 2 / 2 / span 1 / span 1;
     }
 
@@ -364,11 +359,8 @@ form{
 
 @media all and (min-width: 900px){
     nav ul{
-        padding: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-content: space-around;
-        justify-items: center;
     }
 
     .gallery_section{
@@ -393,7 +385,6 @@ form{
     form{
         display: flex;
         flex-direction: row;
-        gap: 20px;
         align-items: center;
     }
     input[type=submit] {
@@ -406,10 +397,6 @@ form{
     }
     aside{
         margin: 20px 0 20px 0;
-        /* height: 50px; */
-        border-radius: 4px;
-        background-color: #d3d3d3;
-        /* grid-area: 2 / 2 / span 1 / span 1; */
     }
     .poster_and_calligraphy{
         display: flex;
