@@ -404,10 +404,10 @@ form{
     .poster_and_calligraphy{
         display: flex;
     }
-    .p_and_img{
+    /* .p_and_img{
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
+    } */
 }
 
 
