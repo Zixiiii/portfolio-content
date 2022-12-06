@@ -24,7 +24,16 @@
 
 <body class="container">
     <!-- <div class="skip"><a href="main"> Skip to Main Content</a></div> -->
-
+    <header class="home_header">
+        <a href="#main" class="skip">Skip to main content</a>
+        <div class="Welcome_image">
+            <div class="Welcome_text_not_home">
+              <h1 id="Name">I am Zixi Zhou</h1>
+              <br>
+              <h2 id="Welcome">Welcome to my home page!</h2>
+            </div>
+          </div>
+    </header>
     <nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -34,41 +43,48 @@
 		</ul>
 	</nav>
 
-    <header>
-		<!-- <h1>Project</h1> -->
-    </header>
-
-    <main  class="main">
-        <h1>Property price forecast</h1>
-        <p>
+    <main  class="main" id="main">
+        <h2 id="cap1">Property price forecast</h2>
+        <p id="p1">
             In this project, I used Python to construct and train regression models between sales prices and other property characteristics by extracting information from data provided by the CCAO(Cook County Assessor's Office, Illinois) which contains over 500,000 property sale records. The price of property is always influenced by a huge number of features, such as material, location and so on. By building and testing several models, I eventually applied the model, using known features to predict unknown sales prices.
         </p>
-        <figure>
+        <figure id="fig1">
             <img src="images/Regression_Result.jpg" alt="Regression Result of the Project" width="500">
             <!-- <figcaption>Shenzhen Bay Park</figcaption> -->
         </figure>
 
-        <h1>MIFA 1862</h1>
-        <p>
+        <h2 id="cap2">MIFA 1862</h2>
+        <p id="p2">
             In the research on the sustainability of shipyard 1862, I consulted materials and fully investigated the background of shipyard 1862. Our group discussed and made the questionnaires. We went on-site to find people in MIFA 1862 to distribute the questionnaires. After we obtained relevant data, we analyzed and extracted information to make Excel charts. With the visualized information, we then conducted the sustainability analysis, come to conclusions and raise up recommended solutions. I finally completed the sustainability analysis report of shipyard 1862 and designed the project poster.
         </p>
-        <figure>
+        <figure id="fig2">
             <img src="images/MIFA_1862.jpg" alt="Photo of the sight in MIFA 1862" width="500">
-            <!-- <figcaption>Rose coast</figcaption> -->
         </figure>    
 
-		<h1>Indoor Vehicle Positioning Based on AGV Platform</h1>
-        <p>
+		<h2 id="cap3">Indoor Vehicle Positioning Based on AGV Platform</h2>
+        <p id="p3">
             In this research project, my team did research on finding the optimized algorithm for indoor positioning. I actively read relevant literature, studied the positioning algorithm, and weighed and selected the optimal scheme. We use the algorithm selected to run tests continuously to validate and improve. During the process, my team successfully completed two presentations. In the final stage, I sorted out materials, summarized work and participated in the completion of scientific research reports.
         </p>
-        <figure>
+        <figure id="fig3">
             <img src="images/Software_Overview_of_the_Project.jpg" alt="The Software Overview of the Project" width="500">
-            <!-- <figcaption>The Mixc</figcaption> -->
         </figure>        
     </main>
 
 	<footer class="footer">
-        <i class="fa-regular fa-address-book"> Contact Info </i>
+        <i id="Contact" class="fa-regular fa-address-book"> Contact Info </i>
+        <div class="contact_form">
+            <form action="https://formspree.io/f/mdojqopw" method="POST">
+                <div>
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" name="name">      
+                </div>
+                <div>
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" name="email">      
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+          </div>
 	</footer>
 </body>
 

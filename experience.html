@@ -24,7 +24,16 @@
 
 <body class="container">
     <!-- <div class="skip"><a href="main"> Skip to Main Content</a></div> -->
-
+    <header class="home_header">
+        <a href="#main" class="skip">Skip to main content</a>
+        <div class="Welcome_image">
+            <div class="Welcome_text_not_home">
+              <h1 id="Name">I am Zixi Zhou</h1>
+              <br>
+              <h2 id="Welcome">Welcome to my home page!</h2>
+            </div>
+          </div>
+    </header>
     <nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -33,53 +42,71 @@
             <li><a href="gallery.html">Gallery</a></li>
 		</ul>
 	</nav>
-
-    <header>
-		<!-- <h1>Experience</h1> -->
-    </header>
     
 
-    <main class="main">
-        <h1>Internship Experience</h1>
-        <h2>AssetPro</h2>
-        <p>
-            I worked as an intern of Data Analysis Department at AssetPro. AssetPro is a leading technology platform in China that facilitates overseas asset and service the transactions.
-            During the internship, I completed the commodity inventory factor of quantitative analysis to measure and stock Davis double-click the strategy of repetition measurement. I also studied the net profit fault strategy of stocks and the SUE.txt factor.
-        </p>
-        <figure>
+    <main class="main" id="main">
+        <h2 id="intern_cap">Internship Experience</h2>
+        <div id="Asset"><h3>AssetPro</h3>
+            <p class="p_and_img">
+
+                I worked as an intern of Data Analysis Department at AssetPro. AssetPro is a leading technology platform in China that facilitates overseas asset and service the transactions.
+                During the internship, I completed the commodity inventory factor of quantitative analysis to measure and stock Davis double-click the strategy of repetition measurement. I also studied the net profit fault strategy of stocks and the SUE.txt factor.
+            </p>
+            <br> 
             <img src="images/AssetPro.jpg" alt="Photo of AssetPro Company" width="500">
-            <!-- <figcaption>The economic vitality of Shenzhen</figcaption> -->
-        </figure>
 
-        <h2>JD.com</h2>
-        <p>
-            I also worked as an intern in the human resources department of JD.com. During the internship, I screened resumes and sorted out candidates' information according to job requirements. I also conducted online interview invitation by telephone to determine the appropriate number and time. I also organized leaderless group discussion, observed the performance of interviewees, and drew up the list of candidates who passed the preliminary interview.
-        </p>
+        </div>
+        
+        <div id="jd">
+            <h3>JD.com</h3>
+            <p>
+                I also worked as an intern in the human resources department of JD.com. During the internship, I screened resumes and sorted out candidates' information according to job requirements. I also conducted online interview invitation by telephone to determine the appropriate number and time. I also organized leaderless group discussion, observed the performance of interviewees, and drew up the list of candidates who passed the preliminary interview.
+            </p>
+        </div>
+        
 
 
-		<h1>Work Experience</h1>
-        <h2>Teaching Assistant of Course Honors Calculus</h2>
-        <p>
-            I was a teaching assistant of course Honors Calculus. I held 2-hour recitation class every week for over 60 students to review important knowledge in the course and discuss
-            advanced topics beyond the course. I also organized 2-hour office hour session every week to answer questions and explain course-related materials for students and graded over 10 assignments, 4 quizes and 2 exams for hundreds of students.
-            
-        </p>     
-        <figure>
+		<h2 id="work_cap">Work Experience</h2>
+        <div id="TA">
+            <h3>Teaching Assistant of <i>Honors Calculus</i> </h3>
+            <p class="p_and_img">
+                I was a teaching assistant of course Honors Calculus. I held 2-hour recitation class every week for over 60 students to review important knowledge in the course and discuss
+                advanced topics beyond the course. I also organized 2-hour office hour session every week to answer questions and explain course-related materials for students and graded over 10 assignments, 4 quizes and 2 exams for hundreds of students.          
+            </p>  
+            <br>
             <img src="images/Teaching_Assistant.jpg" alt="Photo of me on the recitation class" width="500">
-            <!-- <figcaption>Shenzhen north station</figcaption> -->
-        </figure>    
 
-        <h2>Outreach Department of Student Union Department</h2>
-        <p>
-            I worked in the Outreach Department of Student Union Department. 
-            I cooperated with educational institutions for advertising, negotiated the price of different types of push on the WeChat Official Account and poster campaign and conferred with educational institutions about the time, location and other details of lecture, publicized and held the lectures.
-            I also ommunicated and cooperated with enterprises and institutions, strived for sponsorship and support for most activities of the Student Union (such as balls and competitions).
-            
-        </p>        
+
+        </div>
+        
+        <div id="SU">
+            <h3>Outreach Department of Student Union</h3>
+            <p>
+                I worked in the Outreach Department of Student Union Department. 
+                I cooperated with educational institutions for advertising, negotiated the price of different types of push on the WeChat Official Account and poster campaign and conferred with educational institutions about the time, location and other details of lecture, publicized and held the lectures.
+                I also ommunicated and cooperated with enterprises and institutions, strived for sponsorship and support for most activities of the Student Union (such as balls and competitions).
+                
+            </p>
+        </div>
+
+                
     </main>
 
 	<footer class="footer">
-        <i class="fa-regular fa-address-book"> Contact Info </i>
+        <i id="Contact" class="fa-regular fa-address-book"> Contact Info </i>
+        <div class="contact_form">
+            <form action="https://formspree.io/f/mdojqopw" method="POST">
+                <div>
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" name="name">      
+                </div>
+                <div>
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" name="email">      
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+          </div>
 	</footer>
 </body>
 
